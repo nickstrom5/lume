@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /og-card.html
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Host: https://lumenow.app
+Sitemap: https://lumenow.app/sitemap.xml

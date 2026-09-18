@@ -1,0 +1,13 @@
+/* TEAM */
+Studio: Lume
+Contact: hello@lumenow.app
+Support: support@lumenow.app
+From: Chicago, Illinois, US
+
+/* SITE */
+Last update: 2026-09-18
+Language: English
+Doctype: HTML5
+Standards: HTML, CSS, JSON-LD
+Software: Lume — daily glow coach for iPhone and iPhone Duo
+Site: https://lumenow.app/

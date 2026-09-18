@@ -1,0 +1,5 @@
+Contact: mailto:support@lumenow.app
+Expires: 2027-09-18T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://lumenow.app/.well-known/security.txt
+Policy: https://lumenow.app/privacy.html

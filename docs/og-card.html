@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <title>Lume OG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #0e0e0c; }
+    .card {
+      width: 1200px; height: 630px; display: flex; align-items: center; justify-content: space-between;
+      padding: 72px 80px; box-sizing: border-box;
+      background:
+        radial-gradient(ellipse at 18% 80%, rgba(243,241,236,.14), transparent 42%),
+        radial-gradient(ellipse at 80% 20%, rgba(232,228,219,.06), transparent 40%),
+        #0e0e0c;
+      color: #f3f1ec; font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
+    }
+    .mark { width: 36px; height: 36px; border-radius: 50%;
+      background: radial-gradient(circle at 50% 62%, #f3f1ec 0 12%, rgba(243,241,236,.38) 30%, transparent 70%); }
+    .brand { display: flex; align-items: center; gap: 12px; font-family: Fraunces, Georgia, serif; font-size: 28px; font-weight: 500; }
+    h1 { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 58px; line-height: 1.08; letter-spacing: -.03em; margin: 28px 0 16px; max-width: 11ch; }
+    p { margin: 0; color: #9c9890; font-size: 22px; max-width: 22ch; line-height: 1.35; }
+    .copy { max-width: 560px; }
+    .phone {
+      width: 268px; padding: 9px; border-radius: 38px;
+      background: linear-gradient(165deg, #4a4a46, #1c1c1a 40%, #0b0b0a);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.07) inset, 0 28px 60px rgba(0,0,0,.5);
+    }
+    .glass { overflow: hidden; border-radius: 30px; aspect-ratio: 402/874; background: #0e0e0c; position: relative; }
+    .glass img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+    .island { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 68px; height: 20px; background: #000; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="copy">
+      <div class="brand"><span class="mark"></span> Lume</div>
+      <h1>Daily glow. Sixty seconds.</h1>
+      <p>A glow coach for iPhone. Photos stay on the device.</p>
+    </div>
+    <div class="phone">
+      <div class="glass">
+        <img src="phones/today.png" alt="" />
+        <span class="island"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

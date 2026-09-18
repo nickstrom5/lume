@@ -1,0 +1,24 @@
+# Lume
+
+> Daily glow coach for iPhone. One photo. A score. A sixty-second ritual.
+
+Lume reads a photo on the device, scores glow, evenness, texture, and calm, and writes a morning and evening ritual that stays at sixty seconds. Photos are not uploaded. It is a coaching tool, not a medical device.
+
+- Site: https://lumenow.app/
+- Support: mailto:support@lumenow.app
+- Press: mailto:hello@lumenow.app
+- Privacy: https://lumenow.app/privacy.html
+- Terms: https://lumenow.app/terms.html
+- App Store: coming soon
+
+## Product
+- On-device glow score from one photo
+- Sixty-second morning and evening ritual
+- Fourteen-day trend
+- iPhone and iPhone Duo (face on one screen, ritual on the other)
+- No account. No ad tracking.
+
+## Pricing
+- $39.99 / year with a 7-day free trial
+- $7.99 / week with a 7-day free trial
+- Cancel in Settings → Apple ID → Subscriptions
