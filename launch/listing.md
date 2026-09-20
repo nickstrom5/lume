@@ -34,7 +34,7 @@ NOT A MEDICAL DEVICE
 Lume does not diagnose, treat, or replace a clinician. If something on your skin worries you, see someone who can look in person.
 
 PRICING
-Lume Plus is free to try for 7 days, then $39.99/year or $7.99/week. Payment is charged to your Apple ID. The plan renews unless you cancel at least 24 hours before the period ends. Manage it in Settings ‹ Apple ID ‹ Subscriptions.
+Lume Plus is free to try for 7 days, then $39.99/year or $7.99/week. Payment is charged to your Apple ID. The plan renews unless you cancel at least 24 hours before the period ends. Manage it in Settings › Apple ID › Subscriptions.
 
 Privacy: https://lumenow.app/privacy.html
 Terms: https://lumenow.app/terms.html

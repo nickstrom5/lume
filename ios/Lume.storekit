@@ -1,0 +1,97 @@
+{
+  "identifier" : "Lume",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "0",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_lastStorefrontUpdateDate" : 0,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "LumePlus",
+      "localizations" : [
+
+      ],
+      "name" : "Lume Plus",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "39.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "yearly1",
+          "introductoryOffer" : {
+            "displayPrice" : "0",
+            "internalID" : "yearlyIntro",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Daily glow coach. One photo, a score, a sixty-second ritual.",
+              "displayName" : "Lume Plus Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "app.lumenow.lume.plus.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Lume Plus Yearly",
+          "subscriptionGroupID" : "LumePlus",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "7.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "weekly1",
+          "introductoryOffer" : {
+            "displayPrice" : "0",
+            "internalID" : "weeklyIntro",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Daily glow coach. One photo, a score, a sixty-second ritual.",
+              "displayName" : "Lume Plus Weekly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "app.lumenow.lume.plus.weekly",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Lume Plus Weekly",
+          "subscriptionGroupID" : "LumePlus",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

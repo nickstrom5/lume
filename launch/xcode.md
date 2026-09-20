@@ -1,76 +1,74 @@
-# Xcode is downloaded. Do this on the iMac tonight.
+# Xcode 27.1 beta is downloading. Do this now.
 
-You do not need Lume’s source yet. First launch + Apple ID + the $99 enrollment are the wait. The wrap happens after the team ID exists.
+You have the paid Apple Developer team. The Duo SDK is the 1.9 GB zip (`Xcode_27.1_beta.xip`, build 27A9269). Needs **macOS Tahoe 26.6** on Apple silicon.
 
-Bundle ID when we make the real project: `app.lumenow.lume`
-Camera string: `Lume uses the camera to read your glow score. Photos stay on this device.`
+Native source is in `ios/` — SwiftUI Lume, bundle `app.lumenow.lume`.
 
 ---
 
-## 1. First launch (do not skip this)
+## Right now (zip still going)
 
-1. Open **Xcode** from Applications. Not a leftover installer window.
-2. If it asks to install **additional required components**, click **Install**. This can take 10–40 minutes. Leave the Mac open.
-3. Accept the license.
-4. If a platforms sheet appears: keep **iOS**. Install. You do not need watchOS, tvOS, or visionOS.
+App Store Connect. Open [CONNECT.md](../ios/CONNECT.md) and create:
 
-Done when the Welcome window appears: “Create a new Xcode project / Clone git repository / Open existing”.
+1. App ID `app.lumenow.lume`
+2. New iOS app named Lume
+3. Subscription group **Lume Plus**
+   - `app.lumenow.lume.plus.yearly` · $39.99 · 7-day free trial
+   - `app.lumenow.lume.plus.weekly` · $7.99 · 7-day free trial
 
-## 2. iOS 26 simulator
+Do not submit a binary yet.
 
-1. **Xcode → Settings → Components** (sometimes still labelled Platforms).
-2. Next to **iOS 26.x**, click **Get** if it isn’t already installed.
-3. **Window → Devices and Simulators → Simulators**. You should see an iPhone 16 or 17 on iOS 26.
+---
 
-If the list is empty: **+** → Device Type **iPhone 16** (or 17) → OS **iOS 26** → Create.
+## When the zip finishes
 
-## 3. Apple ID in Xcode
+1. Double-click `Xcode_27.1_beta.xip`. Wait for it to expand (~same size again).
+2. Drag **Xcode 27.1 beta** into Applications. Keep the old Xcode.
+3. Open **Xcode 27.1 beta**. Install additional components. Accept the license.
+4. Settings → Accounts → paid team (not Personal Team).
+5. Window → Devices and Simulators → Simulators → **+**
+   - Device type: **iPhone Duo**
+   - OS: **iOS 27.1**
+   - Create
+6. Also create **iPhone 18 Pro** if it is missing.
 
-1. **Xcode → Settings → Accounts**
-2. **+** → **Apple ID**
-3. Sign in with the same Apple ID you will enroll as a developer.
+If Duo is not in the device list, the 27.1 components did not finish. Xcode → Settings → Components → iOS 27.1.
 
-Until the $99 program is approved, the team will say **Personal Team**. That’s enough to run on a simulator. A physical iPhone and TestFlight need the paid program.
+---
 
-## 4. Smoke test (proves the Mac is ready)
+## New project (once)
 
-1. Welcome window → **Create a new Xcode project**
-2. **iOS → App** → Next
-3. Product Name: `LumeSmoke`  
-   Team: your Apple ID  
-   Organization Identifier: `app.lumenow`  
-   Bundle ID becomes `app.lumenow.LumeSmoke`  
-   Interface: **SwiftUI**  
-   Storage: **None**  
-   Language: **Swift**
-4. Save it on the Desktop. Throw it away later.
-5. Top bar: pick an **iPhone 16 / 17** simulator. Press **Play**.
+File → New → Project → iOS → App
 
-You should get a blank white app. If the sim boots, Xcode is done.
-
-Camera in the simulator is a fake feed. Glow scans need a **physical iPhone** later. The sim is still required for screenshots and layout.
-
-## 5. Enroll in Apple Developer (start this tonight — it can sit for 24–48 hours)
-
-On the **iPhone**, with the same Apple ID:
-
-1. App Store → install **Apple Developer**
-2. Open it → **Account** → **Enroll**
-3. Entity: **Individual** (not Company, unless you already have an LLC and D-U-N-S)
-4. Legal name must match the ID Apple has on that Apple ID
-5. Pay **$99 USD** for one year
-
-Apple emails when the account is active. Then App Store Connect unlocks at https://appstoreconnect.apple.com
-
-Do not create the real Lume app record until that email arrives.
-
-## 6. What you wait for vs what we do
-
-| You | Us, after the team ID exists |
+| Field | Value |
 |---|---|
-| Components + iOS 26 sim | Capacitor wrap of Lume (`app.lumenow.lume`) |
-| Apple ID in Xcode | Camera permission string |
-| Developer enrollment ($99) | Yearly $39.99 + weekly $7.99 + 7-day trial |
-| Smoke-test sim boots | TestFlight, screenshots, submit |
+| Product Name | Lume |
+| Team | paid team |
+| Organization Identifier | `app.lumenow` |
+| Bundle ID | `app.lumenow.lume` |
+| Interface | SwiftUI |
+| Storage | None |
+| Language | Swift |
 
-Paste here when: the Welcome window is up, **or** the sim booted, **or** Apple’s enrollment email arrived.
+Delete `ContentView.swift`. Add every file in `ios/Lume/` to the target (the `.swift` files, `PrivacyInfo.xcprivacy`, `Assets.xcassets`, `Resources/*.jpg`). Add `ios/Lume.storekit`.
+
+Info tab:
+
+- Privacy — Camera Usage Description: `Lume uses the camera to read your glow score. Photos stay on this device.`
+- App Uses Non-Exempt Encryption: `NO`
+
+Signing: Automatic, paid team. Capability: In-App Purchase.
+
+Scheme → Run → Options → StoreKit Configuration → `Lume.storekit`
+
+Run on **iPhone 18 Pro** first. Then **iPhone Duo**. Sample path: **See a sample reading**. Seven taps on the wordmark seeds review state for screenshots.
+
+---
+
+## After it boots
+
+Product → Archive → Distribute App → App Store Connect → Upload.
+
+Internal TestFlight to yourself. Screenshots from the 18 Pro sim (6.7") using seeded state: Today, Scan, Ritual, Trend.
+
+Paste here: Welcome window on 27.1, **or** Duo sim exists, **or** first Run succeeded, **or** the compiler error if ArrangementView’s API shifted.
